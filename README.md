@@ -57,7 +57,7 @@ The system consists of the following major modules:
 
 ## Machine Learning Model
 
-The project uses YOLOv5s, fine-tuned to detect two categories:
+The project uses YOLOv5s, fine-tuned to detect two categories. The exported ONNX model used by the Raspberry Pi application is stored at `software/yolo/weights/best.onnx`.
 
 - Speed breakers
 - Potholes
@@ -90,12 +90,12 @@ The original dataset is not included in this repository.
 ## Software Requirements
 
 - Python
-- YOLOv5
+- YOLOv5 (for model training)
 - OpenCV
 - ONNX Runtime
 - Raspberry Pi OS
 
-Refer to `requirements.txt` for the verified software dependencies.
+Install the Raspberry Pi runtime dependencies with `pip install -r requirements.txt`.
 
 ## Results
 
